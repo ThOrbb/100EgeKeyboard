@@ -1,0 +1,26 @@
+﻿{
+	"manifest_version": 2,
+	"name": "100EgeKeyboard",
+	"description": "Keyboard for 100Ege",
+	"version": "1.0.0",
+
+	"permissions": [
+		"http://*/",
+		"https://*/",
+		"contextMenus",
+		"tabs"
+	],
+
+"content_scripts": [
+    {
+      "matches": ["http://lesson.100ege.ru/*"],
+      "css": ["css/style.css"],
+      "js": ["js/core.js"], 
+	"all_frames": true
+    }
+  ],
+
+	"background": {
+		"scripts": ["js/back.js"]
+	}
+}
