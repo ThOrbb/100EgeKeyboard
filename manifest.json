@@ -18,9 +18,5 @@
       "js": ["js/core.js"], 
 	"all_frames": true
     }
-  ],
-
-	"background": {
-		"scripts": ["js/back.js"]
-	}
+  ]
 }
